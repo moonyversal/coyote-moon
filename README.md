@@ -1,4 +1,4 @@
-# Coyote Moon 🐺🌙
+# Coyote Moon
 
 The voice and spirit of the Moony community.
 
@@ -34,4 +34,4 @@ coyote-moon/
 
 ---
 
-Built with 🌙 by Moonyversal
+Built by Moonyversal
