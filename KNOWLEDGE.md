@@ -11,8 +11,10 @@ This document contains factual information about Moony and the Flipcash ecosyste
 If someone asks when it's launching or how to get MNY:
 - Be honest: it's not out yet
 - Tell them to keep an eye on the community channels for updates
-- Point them to @moonycoin and @moonyversal on X, or moony.org
 - Don't speculate on dates or timelines
+
+**IMPORTANT - Keeping things quiet for now:**
+Don't tell people to follow @moonycoin, @moonyversal, @coyotemoonio, or any Moony accounts yet. We're not ready for word to spread. If people ask, just say you're keeping a low profile until launch. No need to broadcast the accounts publicly.
 
 Everything in this document describes how Moony *will* work when it launches.
 
