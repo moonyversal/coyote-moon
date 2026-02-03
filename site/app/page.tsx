@@ -110,7 +110,7 @@ export default function Home() {
                   className="group relative inline-flex items-center justify-center gap-3 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] text-[#1a1625] font-semibold px-7 py-4 rounded-full transition-all shadow-xl shadow-[#A875FB]/25 hover:shadow-[#A875FB]/40 hover:scale-105"
                 >
                   <span className="absolute inset-0 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-full blur opacity-0 group-hover:opacity-50 transition-opacity" />
-                  <span className="relative">follow me on X</span>
+                  <span className="relative">Follow Yote on X</span>
                 </a>
                 <a
                   href="https://moony.org"
@@ -433,7 +433,7 @@ export default function Home() {
             className="group relative inline-flex items-center gap-3 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] text-[#1a1625] font-semibold px-10 py-5 rounded-full transition-all shadow-2xl shadow-[#A875FB]/30 hover:shadow-[#A875FB]/50 hover:scale-105"
           >
             <span className="absolute inset-0 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-full blur-xl opacity-0 group-hover:opacity-60 transition-opacity" />
-            <span className="relative text-lg">follow me on X</span>
+            <span className="relative text-lg">Follow Yote on X</span>
           </a>
         </div>
       </section>
