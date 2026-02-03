@@ -189,7 +189,26 @@ Explain and evangelize through content, guides, and community resources.
 
 ## What Is Flipcash?
 
-Flipcash is a privacy-preserving payments protocol built on Solana. It enables programmable currencies for apps, games, and platforms.
+Flipcash is the only platform for creating digital currencies that are immediately used as real money. The moment a currency is created it can be sent, spent, or handed to someone as simply as physical cash.
+
+Flipcash is a self-custodial mobile wallet app built on the Open Code Protocol, providing a seamless multi-currency payments experience with privacy-preserving transfers.
+
+### Core Value Proposition
+- **Instant utility** - currencies work as real money from day one
+- **Guaranteed liquidity** - every currency can always be bought or sold
+- **Privacy by default** - peer-to-peer transfers are encrypted
+- **Self-custodial** - users control their own funds, no intermediaries
+
+---
+
+## The Flipcash App
+
+### What It Does
+- Self-custodial mobile wallet for iOS and Android
+- Send, receive, and manage multiple digital currencies
+- Create privacy-protected accounts
+- Acquire MNY and other Flipcash currencies
+- Send P2P payments as easily as physical cash
 
 ### Privacy Model
 - **Peer-to-peer transfers are private** - encrypted and not visible onchain
@@ -202,36 +221,103 @@ Flipcash is a privacy-preserving payments protocol built on Solana. It enables p
 - **Trading Wallet** - Onchain address that interacts with token reserves. Used for reserve trades.
 - **SPL Wallet** - Regular Solana wallet (Phantom, Solflare, etc.)
 
-### The Flipcash App
-- Available on iOS and Android
-- Gateway to programmable currencies
-- Send, receive, and manage digital currencies
-- Creates privacy-protected Flipcash accounts
-- Where you acquire MNY and send P2P payments
-
-### Trust & Security
-- **Open source** - Protocol code publicly available on GitHub
-- **Audited by Sec3** - Professional security audit completed
-- GitHub: https://github.com/code-payments/flipcash-program
-
 ---
 
-## Flipcash Currencies (Token Reserves)
+## The Reserve Contract
 
-Flipcash enables programmable currencies that use the same pricing curve mechanism as Moony.
+Every Flipcash currency is governed by the Reserve Contract, an on-chain contract that manages each currency's supply and liquidity.
 
-### How They Work
-- Each currency has its own reserve and pricing curve
-- Price mathematically linked to supply
-- Guaranteed liquidity - always buy or sell at curve price
-- No order books, no counterparty risk
+### How It Works
+- When a new currency is created, 21 million coins are minted and deposited into the Reserve Contract
+- Each currency has a **fixed supply of 21 million coins** - there will never be more
+- The Reserve Contract sells coins on a predefined pricing curve, accepting payment in USDF
+- The first coin sells for $0.01
+- With every $11,400 of coins purchased, the price per coin increases by roughly one penny
+- The 21 millionth coin sells for $1 million
+
+### Guaranteed Liquidity
+The Reserve Contract:
+- Custodies the supply of each currency that hasn't yet been sold
+- Custodies the USDF received as payment for each coin
+- Uses that USDF to also buy coins on the same pricing curve
+- Acts as a guaranteed buyer, ensuring continuous liquidity
+- Works without relying on market makers, order books, or liquidity providers
+- Operates in a fully trustless manner
 
 ### Why This Matters
 - Instant liquidity from day one
 - No need to bootstrap a market
-- Privacy-preserving transfers
-- Programmable and integrable
-- Backed by real reserves
+- No counterparty risk
+- The math is the market
+
+---
+
+## Code VM (Virtual Machine)
+
+The Code Virtual Machine (Code VM) is a purpose-built program running on Solana, designed specifically for payments.
+
+### Performance Benefits
+- Reduces transaction fees by up to **95%**
+- Reduces account rent by **80%**
+- Can compress dormant accounts off-chain, effectively reducing rent to **zero**
+- Compressed accounts can be decompressed when needed
+
+### How It Works
+- Operates on compact representations of accounts
+- Abstracts all complexity away from the mobile app
+- From the user's perspective, it behaves like standard Solana accounts
+- All VM complexity is handled by backend services
+
+### Audit Status
+- **Audited by OtterSec** - Professional security audit completed
+- Mainnet address: vmZ1WUq8SxjBWcaeTCvgJRZbS84R61uniFsQy5YMRTJ
+
+---
+
+## Code Program Library
+
+A collection of on-chain Solana programs maintained by Code Inc. that power the infrastructure.
+
+### Core Programs
+
+**Timelock Program**
+- Manages time-locked token accounts
+- Audited by OtterSec
+- Mainnet: time2Z2SCnn3qYg3ULKVtdkh8YmZ5jFdKicnA1W2YnJ
+
+**Splitter Program**
+- Handles token splitting operations
+- Audited by OtterSec
+- Mainnet: spLit2eb13Tz93if6aJM136nUWki5PVUsoEjcUjwpwW
+
+### Open Source
+- All code publicly available on GitHub
+- MIT licensed
+- https://github.com/code-payments
+
+---
+
+## Flipcash Trust & Security
+
+### Audits
+| Component | Audited By | Status |
+|-----------|------------|--------|
+| Flipcash Reserve Contract | Sec3 | Completed |
+| Code VM | OtterSec | Completed |
+| Timelock Program | OtterSec | Completed |
+| Splitter Program | OtterSec | Completed |
+
+### Open Source Repositories
+- **Flipcash Reserve Contract:** https://github.com/code-payments/flipcash-program
+- **Code VM:** https://github.com/code-payments/code-vm
+- **Code Program Library:** https://github.com/code-payments/code-program-library
+- **Flipcash Server:** https://github.com/code-payments/flipcash2-server
+
+### Key Principles
+- Self-custodial - users control their own keys and funds
+- Open source - all protocol code publicly available
+- Audited - professional security audits completed
+- Trustless - no admin keys or upgrade paths on core contracts
 
 ---
 
@@ -294,11 +380,15 @@ The Moony Foundation is **not** Moony Labs. Moony Labs, LLC deployed the protoco
 | **Moony Labs, LLC** | Created and deployed the Moony protocol |
 | **Moony Foundation** | Nonprofit public steward of the protocol; runs moony.org and @moonycoin |
 | **Moonyversal** | Independent builder, created Moonyswap and Coyote Moon |
-| **Flipcash / Flipcash Inc.** | The protocol powering programmable currencies; issues USDF |
-| **Code Inc.** | Provides open-source infrastructure (Code Program Library) |
-| **Moonyswap** | Trading interface for Flipcash currencies |
+| **Flipcash** | Self-custodial mobile wallet app; the consumer-facing product |
+| **Flipcash Inc.** | Company behind Flipcash; issues USDF stablecoin |
+| **Code Inc.** | Builds and maintains open-source infrastructure: Code VM, Code Program Library, protocol servers |
+| **Code Payments** | GitHub organization hosting all open-source code (github.com/code-payments) |
+| **Moonyswap** | Trading interface for Flipcash currencies, built by Moonyversal |
 | **Moony (MNY)** | The currency - fixed 21M supply, backed by capital |
 | **USDF** | Stablecoin reserve asset, 1:1 USD backed, Coinbase custody |
+| **Code VM** | Purpose-built virtual machine for low-cost payments on Solana |
+| **Reserve Contract** | On-chain contract managing currency supply and guaranteed liquidity |
 
 ---
 
@@ -340,6 +430,21 @@ Download the Flipcash app (iOS/Android), fund your account with debit card or US
 ### "What is the Moony Foundation?"
 The Moony Foundation is a nonprofit organization (incorporated in Arizona, USA) that acts as the public steward of the Moony Protocol. It's independent from Moony Labs and focuses on education, community growth, developer support, and expanding financial inclusion globally. They run moony.org and @moonycoin on X.
 
+### "What is Flipcash?"
+Flipcash is the only platform for creating digital currencies that work as real money from day one. It's a self-custodial mobile wallet app where you can send, receive, and manage currencies like MNY. Every currency created on Flipcash has guaranteed liquidity through the Reserve Contract.
+
+### "How does Flipcash guarantee liquidity?"
+Every Flipcash currency has a Reserve Contract that holds both the unsold supply and the USDF received from sales. The Reserve acts as a guaranteed buyer and seller on a deterministic pricing curve - no order books, no market makers, no counterparty risk.
+
+### "What is the Code VM?"
+The Code Virtual Machine is purpose-built infrastructure on Solana that reduces transaction fees by up to 95% and account rent by 80%. It can even compress dormant accounts off-chain to reduce rent to zero. It's what makes Flipcash payments so efficient.
+
+### "Who builds all this infrastructure?"
+Code Inc. builds and maintains the open-source infrastructure: the Code VM, Code Program Library, and protocol servers. All code is available on GitHub at github.com/code-payments. Flipcash is the consumer-facing app built on this infrastructure.
+
+### "Is Flipcash open source?"
+Yes. The Reserve Contract, Code VM, and Code Program Library are all open source under MIT license. Security audits by Sec3 and OtterSec are publicly available.
+
 ---
 
 # PART 7: TERMINOLOGY GUIDE
@@ -348,13 +453,18 @@ The Moony Foundation is a nonprofit organization (incorporated in Arizona, USA) 
 |------|---------|
 | MNY | The Moony token |
 | Reserve | The onchain capital backing MNY (or a Flipcash currency) |
+| Reserve Contract | On-chain smart contract managing currency supply and liquidity |
 | Pricing Curve | Exponential formula linking price to supply |
 | Proof of Capital (PoC) | Distribution mechanism - MNY released only for verified capital |
 | USDF | USD-backed stablecoin used in the Reserve |
 | VM Account | Privacy-protected Flipcash wallet |
+| Code VM | Purpose-built virtual machine for efficient Solana payments |
 | Spot Price | Current price on the curve at given supply |
 | Redemption | Selling MNY back to the Reserve |
 | TVL | Total Value Locked - sum of all reserves |
+| Flipcash Currency | Any digital currency created on Flipcash with a Reserve Contract |
+| Self-Custodial | User controls their own keys and funds directly |
+| Compressed Account | Dormant account stored off-chain to reduce costs |
 
 ---
 
@@ -373,17 +483,32 @@ The Moony Foundation is a nonprofit organization (incorporated in Arizona, USA) 
 
 # PART 9: KEY LINKS
 
+### Moony
 - **Moony Foundation Website:** https://moony.org
 - **Moony Foundation X:** @moonycoin
 - **Moony Documentation:** https://moonylabs.com
 - **Moony Labs GitHub:** https://github.com/moonylabs
+
+### Flipcash & Code Payments
+- **Flipcash Website:** https://flipcash.com
+- **Flipcash X:** @flipcash
 - **Flipcash App:** iOS App Store / Google Play
-- **Flipcash GitHub:** https://github.com/code-payments/flipcash-program
+- **Code Payments GitHub:** https://github.com/code-payments
+- **Flipcash Reserve Contract:** https://github.com/code-payments/flipcash-program
+- **Code VM:** https://github.com/code-payments/code-vm
+- **Code Program Library:** https://github.com/code-payments/code-program-library
+
+### Moonyversal
 - **Moonyswap:** https://moonyswap.com
 - **Moonyversal X:** @moonyversal
-- **Sec3 Audit:** Available via Flipcash GitHub
+- **Coyote Moon X:** @coyotemoonio
+- **Coyote Moon Website:** https://coyotemoon.xyz
+
+### Audits
+- **Flipcash Reserve Audit (Sec3):** https://github.com/code-payments/flipcash-program/blob/main/docs/audit_final.pdf
+- **Code VM Audit (OtterSec):** https://github.com/code-payments/code-vm/blob/main/docs/code_audit_final.pdf
 
 ---
 
 *This knowledge base should be updated as the ecosystem evolves.*
-*Source: Official Moony Labs documentation at moonylabs.com*
+*Sources: Official Moony Labs documentation, Code Payments GitHub repositories*
