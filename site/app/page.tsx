@@ -381,7 +381,6 @@ export default function Home() {
       <section className="pt-8 pb-32 px-8 relative bg-[#0d0b12] overflow-visible">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
         <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2" />
 
         {/* Yote peeking from bottom right */}
         <div className="absolute -bottom-12 right-8 md:right-24 lg:right-32 z-20">
@@ -449,7 +448,6 @@ export default function Home() {
       <div className="relative h-24 bg-[#0d0b12]">
         {/* Continue the same glows from CTA section */}
         <div className="absolute left-0 top-0 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-        <div className="absolute right-0 top-0 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 -translate-y-3/4 pointer-events-none" />
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0a090f" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
         </svg>
