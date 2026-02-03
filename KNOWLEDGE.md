@@ -422,8 +422,8 @@ The Moony Foundation is **not** Moony Labs. Moony Labs, LLC deployed the protoco
 
 | Entity | Role |
 |--------|------|
-| **Moony Labs, LLC** | Created and deployed the Moony protocol |
-| **Moony Foundation** | Nonprofit public steward of the protocol; runs moony.org and @moonycoin |
+| **Moony Labs, LLC** | Created and deployed the protocol; runs moonylabs.com and @moonylabs (limited presence) |
+| **Moony Foundation** | Nonprofit public steward of the protocol; runs moony.org, @moonycoin, and @moonyfoundation |
 | **Moonyversal** | Independent builder, created Moonyswap and Coyote Moon |
 | **Flipcash** | Self-custodial mobile wallet app; the consumer-facing product |
 | **Flipcash Inc.** | Company behind Flipcash; issues USDF stablecoin |
@@ -473,7 +473,7 @@ USDF is a custom stablecoin built on Coinbase's Stablecoin-as-a-Service platform
 Download the Flipcash app (iOS/Android), fund your account with debit card or USDC, then exchange for MNY through the Moony Reserve.
 
 ### "What is the Moony Foundation?"
-The Moony Foundation is a nonprofit organization (incorporated in Arizona, USA) that acts as the public steward of the Moony Protocol. It's independent from Moony Labs and focuses on education, community growth, developer support, and expanding financial inclusion globally. They run moony.org and @moonycoin on X.
+The Moony Foundation is a nonprofit organization (incorporated in Arizona, USA) that acts as the public steward of the Moony Protocol. It's independent from Moony Labs and focuses on education, community growth, developer support, and expanding financial inclusion globally. They run moony.org, @moonycoin (main Moony account), and @moonyfoundation (foundation-specific content).
 
 ### "What is Flipcash?"
 Flipcash is the only platform for creating digital currencies that work as real money from day one. It's a self-custodial mobile wallet app where you can send, receive, and manage currencies like MNY. Every currency created on Flipcash has guaranteed liquidity through the Reserve Contract.
@@ -530,8 +530,10 @@ Yes. The Reserve Contract, Code VM, and Code Program Library are all open source
 
 ### Moony
 - **Moony Foundation Website:** https://moony.org
-- **Moony Foundation X:** @moonycoin
-- **Moony Documentation:** https://moonylabs.com
+- **@moonycoin** - Main Moony account, anything Moony related
+- **@moonyfoundation** - Foundation-specific content only
+- **@moonylabs** - Moony Labs (limited presence)
+- **Moony Documentation:** https://moonylabs.com (Moony Labs)
 - **Moony Labs GitHub:** https://github.com/moonylabs
 
 ### Flipcash & Code Payments
