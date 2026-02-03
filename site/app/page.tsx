@@ -130,8 +130,8 @@ export default function Home() {
                 <Image
                   src="/yote-v2.png"
                   alt="coyote moon"
-                  width={520}
-                  height={347}
+                  width={620}
+                  height={413}
                   priority
                   className="relative z-10 drop-shadow-[0_0_30px_rgba(168,117,251,0.4)]"
                 />
