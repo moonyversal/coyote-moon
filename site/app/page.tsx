@@ -1,7 +1,17 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <main className="flex flex-1 flex-col items-center justify-center px-6 text-center">
+        <Image
+          src="/yote.png"
+          alt="Coyote Moon"
+          width={280}
+          height={280}
+          priority
+          className="mb-8"
+        />
         <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
           Coyote Moon
         </h1>
