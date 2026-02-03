@@ -451,6 +451,7 @@ export default function Home() {
           <path fill="#0d0b12" d="M0,50 C480,100 960,0 1440,50 L1440,0 L0,0 Z" />
         </svg>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/30 via-[#A875FB]/15 to-transparent pointer-events-none" />
+        <div className="absolute -top-20 right-0 w-[400px] h-[300px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 pointer-events-none" />
       </div>
 
       {/* Footer */}
