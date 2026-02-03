@@ -8,16 +8,8 @@ const blanquotey = localFont({ src: "../fonts/Blanquotey.ttf" });
 export default function Home() {
   return (
     <div className="flex flex-col bg-[#0d0b12] min-h-screen overflow-hidden">
-      {/* Film grain overlay */}
-      <div className="fixed inset-0 z-50 pointer-events-none opacity-[0.03]">
-        <svg className="w-full h-full">
-          <filter id="grain">
-            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
-            <feColorMatrix type="saturate" values="0" />
-          </filter>
-          <rect width="100%" height="100%" filter="url(#grain)" />
-        </svg>
-      </div>
+      {/* Film grain overlay - CSS-based for better performance */}
+      <div className="fixed inset-0 z-50 pointer-events-none opacity-[0.015] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
 
       {/* Animated stars background */}
       <div className="fixed inset-0 z-0">
@@ -179,7 +171,7 @@ export default function Home() {
 
       {/* What is Yote section */}
       <section className="relative py-32 px-8 bg-[#13111a]">
-        <div className="absolute right-0 top-1/2 w-96 h-96 bg-[#A875FB]/10 rounded-full blur-[100px]" />
+        <div className="absolute right-0 top-1/2 w-96 h-96 bg-[#A875FB]/10 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#A875FB] to-[#FEDAD6] font-bold text-sm uppercase tracking-widest mb-6">What is coyote moon?</span>
           <h2 className="text-5xl font-bold text-white mt-4 mb-8 leading-tight">
@@ -196,11 +188,11 @@ export default function Home() {
 
       {/* Features grid */}
       <section className="py-32 px-8 bg-[#13111a] relative">
-        <div className="absolute left-0 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-[80px]" />
+        <div className="absolute left-0 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
@@ -216,7 +208,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
@@ -232,7 +224,7 @@ export default function Home() {
             </div>
 
             {/* Card 3 */}
-            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
+            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
@@ -252,8 +244,8 @@ export default function Home() {
 
       {/* How it works section */}
       <section className="py-32 px-8 relative bg-[#0d0b12]">
-        <div className="absolute left-1/4 top-1/2 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-[120px]" />
-        <div className="absolute right-1/4 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-[80px]" />
+        <div className="absolute left-1/4 top-1/2 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl" />
+        <div className="absolute right-1/4 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-20">
@@ -324,7 +316,7 @@ export default function Home() {
               href="https://x.com/coyotemoonxyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl p-10 border border-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-10 border border-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
@@ -342,7 +334,7 @@ export default function Home() {
               href="https://t.me/moonyversal"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl p-10 border border-white/10 hover:border-[#229ED9]/50 transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-10 border border-white/10 hover:border-[#229ED9]/50 transition-all duration-500 hover:-translate-y-2"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-[#229ED9]/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
@@ -362,8 +354,8 @@ export default function Home() {
       {/* CTA section */}
       <section className="py-32 px-8 relative bg-[#0d0b12]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#A875FB]/20 via-transparent to-transparent" />
-        <div className="absolute left-0 top-1/2 w-[600px] h-[600px] bg-[#A875FB]/20 rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute right-0 top-1/2 w-[600px] h-[600px] bg-[#FEDAD6]/15 rounded-full blur-[150px] translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute right-0 top-1/2 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
 
         {/* Yote peeking from bottom right */}
         <div className="absolute -bottom-4 right-8 md:right-24 lg:right-32">
