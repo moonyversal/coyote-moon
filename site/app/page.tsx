@@ -371,21 +371,15 @@ export default function Home() {
 
       {/* Divider wave */}
       <div className="relative h-24 bg-[#13111a]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
-        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="waveGradientCTA" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#17141f" />
-              <stop offset="100%" stopColor="#13111a" />
-            </linearGradient>
-          </defs>
-          <path fill="url(#waveGradientCTA)" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#A875FB]/20" />
+        <svg className="absolute top-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path fill="#13111a" d="M0,50 C360,0 1080,100 1440,50 L1440,0 L0,0 Z" />
         </svg>
       </div>
 
       {/* CTA section */}
       <section className="py-32 px-8 relative bg-[#13111a]">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#A875FB]/20 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
         <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute right-0 top-1/2 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
 
@@ -452,10 +446,9 @@ export default function Home() {
       </section>
 
       {/* Divider wave */}
-      <div className="relative h-24 bg-[#13111a]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/20 via-transparent to-transparent" />
-        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <path fill="#0a090f" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
+      <div className="relative h-24 bg-[#0a090f]">
+        <svg className="absolute top-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path fill="#13111a" d="M0,50 C480,100 960,0 1440,50 L1440,0 L0,0 Z" />
         </svg>
       </div>
 
