@@ -34,6 +34,20 @@ Moony is an open monetary protocol designed to enable permissionless payments wi
 
 ---
 
+## The Moony Symbol
+
+The Moony icon is the unicode character **APL Functional Symbol Circle Underbar** (⍜).
+
+It has layered meaning:
+
+**On the surface:** The circle is the moon. The line is the horizon. Moon rising over the horizon - simple, clean.
+
+**Deeper:** Rotate it and you see a 1 and a 0. Binary. A nod to Moony's nature as digital currency - it exists as code, as math, as ones and zeros on a blockchain.
+
+This is the kind of detail that matters. The symbol isn't random. It means something.
+
+---
+
 ## MNY Token
 
 ### Core Facts
