@@ -549,7 +549,7 @@ Yes. The Reserve Contract, Code VM, and Code Program Library are all open source
 - **Moonyswap:** https://moonyswap.com
 - **Moonyversal X:** @moonyversal
 - **Coyote Moon X:** @coyotemoonxyz
-- **Coyote Moon Website:** https://coyotemoon.xyz
+- **Coyote Moon Website:** https://www.coyotemoon.xyz
 
 ### Audits
 - **Flipcash Reserve Audit (Sec3):** https://github.com/code-payments/flipcash-program/blob/main/docs/audit_final.pdf
