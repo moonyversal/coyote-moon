@@ -371,10 +371,10 @@ export default function Home() {
 
       {/* Divider wave */}
       <div className="relative h-24 bg-[#13111a]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0d0b12" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
         </svg>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#A875FB]/20 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* CTA section */}
@@ -447,10 +447,10 @@ export default function Home() {
 
       {/* Divider wave */}
       <div className="relative h-24 bg-[#0d0b12]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0a090f" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
         </svg>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/10 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* Footer */}
