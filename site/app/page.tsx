@@ -91,14 +91,14 @@ export default function Home() {
         </header>
 
         {/* Hero content */}
-        <div className="relative z-20 flex-1 flex items-center justify-center px-8">
-          <div className="flex items-center gap-16 max-w-6xl w-full">
-            <div className="flex-1 space-y-8">
+        <div className="relative z-20 flex-1 flex items-center justify-center px-6 md:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl w-full">
+            <div className="flex-1 space-y-6 md:space-y-8 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#A875FB]/10 to-[#FEDAD6]/10 border border-[#A875FB]/20">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                 <span className="text-sm text-white/70">Online & Building</span>
               </div>
-              <h1 className="text-7xl font-black text-white leading-tight">
+              <h1 className="text-5xl md:text-7xl font-black text-white leading-tight">
                 Hey, I'm{" "}
                 <span className="relative">
                   <span className="text-transparent bg-clip-text bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] animate-gradient">
@@ -107,18 +107,18 @@ export default function Home() {
                   <span className="absolute -inset-1 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] blur-2xl opacity-40" />
                 </span>
               </h1>
-              <p className="text-xl text-white/50 max-w-lg leading-relaxed">
+              <p className="text-lg md:text-xl text-white/50 max-w-lg leading-relaxed mx-auto md:mx-0">
                 A desert coyote with a dream. The voice and spirit of the Moony community. Tenacious, dreaming, always building toward the moon.
               </p>
-              <div className="flex gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
                 <a
                   href="https://x.com/coyotemoonxyz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative inline-flex items-center gap-3 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] text-[#1a1625] font-semibold px-7 py-4 rounded-full transition-all shadow-xl shadow-[#A875FB]/25 hover:shadow-[#A875FB]/40 hover:scale-105"
+                  className="group relative inline-flex items-center justify-center gap-3 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] text-[#1a1625] font-semibold px-7 py-4 rounded-full transition-all shadow-xl shadow-[#A875FB]/25 hover:shadow-[#A875FB]/40 hover:scale-105"
                 >
                   <span className="absolute inset-0 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-full blur opacity-0 group-hover:opacity-50 transition-opacity" />
-                  <span className="relative">Follow</span>
+                  <span className="relative">follow me</span>
                   <svg className="relative w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
@@ -127,14 +127,14 @@ export default function Home() {
                   href="https://moony.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-white/70 hover:text-white font-semibold px-7 py-4 rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all"
+                  className="inline-flex items-center justify-center text-white/70 hover:text-white font-semibold px-7 py-4 rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all"
                 >
                   Learn about Moony
                 </a>
               </div>
             </div>
 
-            <div className="flex-1 flex justify-center">
+            <div className="flex-1 flex justify-center order-first md:order-last">
               <div className="relative">
                 <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#A875FB/40,#FEDAD6/40)] rounded-full blur-[60px] scale-75" />
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#A875FB]/20 to-transparent rounded-full blur-3xl animate-pulse" />
@@ -380,11 +380,37 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <p className="text-6xl font-bold text-white mb-8 leading-tight">
-            <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)]">moons out.</span>
+          <p className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+            <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] typewriter">moons out.</span>
             <br />
-            feels like a sign.
+            <span className="typewriter-delay">feels like a sign.</span>
           </p>
+          <style jsx>{`
+            .typewriter {
+              display: inline-block;
+              overflow: hidden;
+              white-space: nowrap;
+              border-right: 2px solid transparent;
+              animation: typing 1.5s steps(10) forwards, blink 0.7s step-end 3;
+              width: 0;
+              animation-delay: 0.5s;
+            }
+            .typewriter-delay {
+              display: inline-block;
+              overflow: hidden;
+              white-space: nowrap;
+              animation: typing 1.8s steps(18) forwards;
+              width: 0;
+              animation-delay: 2.2s;
+            }
+            @keyframes typing {
+              from { width: 0; }
+              to { width: 100%; }
+            }
+            @keyframes blink {
+              50% { border-color: #A875FB; }
+            }
+          `}</style>
           <p className="text-xl text-white/50 mb-10">Come say hi. Yote's always around.</p>
           <a
             href="https://x.com/coyotemoonxyz"
@@ -393,7 +419,7 @@ export default function Home() {
             className="group relative inline-flex items-center gap-3 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] text-[#1a1625] font-semibold px-10 py-5 rounded-full transition-all shadow-2xl shadow-[#A875FB]/30 hover:shadow-[#A875FB]/50 hover:scale-105"
           >
             <span className="absolute inset-0 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-full blur-xl opacity-0 group-hover:opacity-60 transition-opacity" />
-            <span className="relative text-lg">Follow Yote</span>
+            <span className="relative text-lg">follow me</span>
             <svg className="relative w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
             </svg>
@@ -402,8 +428,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/5 px-8 py-10 bg-[#0a090f]">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <footer className="border-t border-white/5 px-6 md:px-8 py-10 bg-[#0a090f]">
+        <div className="max-w-6xl mx-auto flex flex-col items-center gap-6 text-center md:text-left md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] shadow-lg shadow-[#A875FB]/20 overflow-hidden p-[2px]">
               <div className="w-full h-full rounded-full overflow-hidden">

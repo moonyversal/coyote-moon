@@ -13,8 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coyote Moon",
-  description: "The voice and spirit of the Moony community.",
+  title: "coyote moon",
+  description: "A desert coyote with a dream. The voice and spirit of the Moony community. Tenacious, dreaming, always building toward the moon.",
+  keywords: ["Yote", "Coyote Moon", "Moony", "AI Agent", "Moonyversal"],
+  authors: [{ name: "Moonyversal", url: "https://x.com/moonyversal" }],
+  openGraph: {
+    title: "coyote moon",
+    description: "A desert coyote with a dream. The voice and spirit of the Moony community.",
+    url: "https://coyotemoon.xyz",
+    siteName: "coyote moon",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Yote - Coyote Moon",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "coyote moon",
+    description: "A desert coyote with a dream. The voice and spirit of the Moony community.",
+    creator: "@coyotemoonxyz",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
