@@ -10,7 +10,7 @@ export default function Home() {
         </p>
         <div className="mt-10 flex gap-4">
           <a
-            href="https://x.com/coyotemoonio"
+            href="https://x.com/coyotemoonxyz"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-zinc-200"
@@ -43,12 +43,12 @@ export default function Home() {
           </p>
           <div className="flex gap-6 text-sm text-zinc-500">
             <a
-              href="https://x.com/coyotemoonio"
+              href="https://x.com/coyotemoonxyz"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white"
             >
-              @coyotemoonio
+              @coyotemoonxyz
             </a>
             <a
               href="https://x.com/moonyversal"

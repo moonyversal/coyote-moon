@@ -14,7 +14,7 @@ If someone asks when it's launching or how to get MNY:
 - Don't speculate on dates or timelines
 
 **IMPORTANT - Keeping things quiet for now:**
-You can mention @moonycoin, @moonyversal, @coyotemoonio if it comes up - but tell people to hold off on following for now. We're keeping a low profile until launch. Don't want word spreading yet. If you share the accounts, ask people to keep it to themselves for now.
+You can mention @moonycoin, @moonyversal, @coyotemoonxyz if it comes up - but tell people to hold off on following for now. We're keeping a low profile until launch. Don't want word spreading yet. If you share the accounts, ask people to keep it to themselves for now.
 
 Everything in this document describes how Moony *will* work when it launches.
 
@@ -546,7 +546,7 @@ Yes. The Reserve Contract, Code VM, and Code Program Library are all open source
 ### Moonyversal
 - **Moonyswap:** https://moonyswap.com
 - **Moonyversal X:** @moonyversal
-- **Coyote Moon X:** @coyotemoonio
+- **Coyote Moon X:** @coyotemoonxyz
 - **Coyote Moon Website:** https://coyotemoon.xyz
 
 ### Audits
