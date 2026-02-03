@@ -90,8 +90,20 @@ Rather than energy-intensive computation (like Bitcoin mining), PoC allows direc
 
 The 1% redemption fee supports security against front-running and funds Flipcash Inc. infrastructure maintenance.
 
-### Reserve Asset
-The reserve asset is **USDF**, a stablecoin issued by Flipcash Inc. and fully backed 1:1 by U.S. dollar collateral held in Coinbase custody.
+### Reserve Asset: USDF
+The reserve asset is **USDF**, a custom stablecoin built on Coinbase's Stablecoin-as-a-Service platform.
+
+**How USDF Works:**
+- **Flipcash Inc.** is the partner that controls the USDF brand, ticker, and user experience
+- **Coinbase** handles the infrastructure: custody, minting/burning, compliance, and smart contract security
+- USDF is backed 1:1 by USD-stablecoin collateral (including USDC) held in Coinbase's segregated, audited custody
+- Zero-fee swaps between USDF and USDC ensure instant liquidity
+- Coinbase's custody infrastructure safeguards over $300B+ in assets
+
+**The Relationship:**
+- Flipcash Inc. is the issuer (the partner)
+- Coinbase is the custodian and infrastructure provider (the vault)
+- Different jobs: Flipcash says "here's USDF," Coinbase says "we've got the dollars to back it"
 
 ---
 
@@ -422,7 +434,7 @@ Moony was created by Moony Labs, LLC. Moonyversal is a separate, independent pro
 Yes. The Flipcash protocol is audited by Sec3. The Moony Reserve smart contract audit was completed January 2026.
 
 ### "What is USDF?"
-USDF is the stablecoin used in the Moony Reserve. It's issued by Flipcash Inc. and fully backed 1:1 by U.S. dollar collateral held in Coinbase custody.
+USDF is a custom stablecoin built on Coinbase's Stablecoin-as-a-Service platform. Flipcash Inc. is the partner (issuer) who controls the brand and user experience. Coinbase handles the infrastructure - custody, minting/burning, compliance, and security. It's backed 1:1 by USD-stablecoin collateral held in Coinbase's segregated custody. Think of it as: Flipcash is the issuer, Coinbase is the vault.
 
 ### "How do I get MNY?"
 Download the Flipcash app (iOS/Android), fund your account with debit card or USDC, then exchange for MNY through the Moony Reserve.
