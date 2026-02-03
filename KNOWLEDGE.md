@@ -337,22 +337,25 @@ A collection of on-chain Solana programs maintained by Code Inc. that power the 
 
 ## What Is Moonyswap?
 
-Moonyswap is a trading interface for Flipcash currencies built by Moonyversal. It lets you buy and sell directly with onchain reserves.
+Moonyswap is a clean trading interface for Flipcash currencies built by Moonyversal.
 
-### Key Features
-- Automatically discovers all Flipcash currencies
-- Trade directly with token reserves
-- View real-time prices, reserves, and market caps
-- Portfolio tracking with rewards and badges
+### Why Use Moonyswap?
+The main value: you can buy and sell any Flipcash currency using your favorite Solana wallet (Phantom, Solflare, Backpack, whatever). No Flipcash app required. Just connect your wallet, pick a currency, trade directly with the reserve.
+
+It's clean UX for people who already live in the Solana ecosystem.
+
+### What It Does
 - Works with any Solana wallet
+- Trade directly with token reserves (same prices as going direct)
+- See all Flipcash currencies in one place
+- Real-time prices, reserves, market caps
+- Portfolio tracking
+
+### The Fee
+There's a 0.33% fee on buys that goes toward purchasing MNY. It's negligible - most people don't notice it. If someone really wants to skip it, they can go direct to the reserve contract or use the Flipcash app. Nobody's forced through Moonyswap.
 
 ### Built By
 **Moonyversal** - An independent project building tools for the Moony community. Moonyversal did NOT create Moony itself.
-
-### Platform Fees
-- **Fees on buys:** Used to buy Moony, may be distributed as rewards to active traders
-- **Fees on sells:** Go to Flipcash
-- **Moonyswap-specific:** 0.33% fee on buys automatically purchases MNY
 
 ---
 
