@@ -369,6 +369,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider wave */}
+      <div className="relative h-24 bg-[#13111a]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
+        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="waveGradientCTA" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#17141f" />
+              <stop offset="100%" stopColor="#13111a" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#waveGradientCTA)" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
+
       {/* CTA section */}
       <section className="py-32 px-8 relative bg-[#13111a]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#A875FB]/20 via-transparent to-transparent" />
