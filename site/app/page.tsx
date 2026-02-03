@@ -359,7 +359,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Telegram</h3>
-                <p className="text-white/50 text-lg">Moonyversal Community</p>
+                <p className="text-white/50 text-lg">Moony Community</p>
               </div>
             </a>
           </div>
