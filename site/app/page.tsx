@@ -386,7 +386,7 @@ export default function Home() {
         {/* Yote peeking from bottom right */}
         <div className="absolute -bottom-12 right-8 md:right-24 lg:right-32 z-20">
           <div className="relative">
-            <div className="absolute -inset-16 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/40 via-[#A875FB]/20 to-transparent rounded-full blur-2xl" />
+            <div className="absolute -inset-24 -right-32 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/40 via-[#A875FB]/20 to-transparent blur-3xl" />
             <Image
               src="/yote-v2.png"
               alt=""
@@ -446,12 +446,11 @@ export default function Home() {
       </section>
 
       {/* Divider wave */}
-      <div className="relative h-24 bg-[#0a090f]">
+      <div className="relative h-24 bg-[#0a090f] overflow-visible">
         <svg className="absolute top-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0d0b12" d="M0,50 C480,100 960,0 1440,50 L1440,0 L0,0 Z" />
         </svg>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/30 via-[#A875FB]/15 to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 w-96 h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#A875FB]/40 via-[#A875FB]/20 to-transparent pointer-events-none" />
       </div>
 
       {/* Footer */}
