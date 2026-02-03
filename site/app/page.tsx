@@ -163,17 +163,16 @@ export default function Home() {
       </div>
 
       {/* Divider wave */}
-      <div className="relative h-24 -mt-1 overflow-visible">
-        <div className="absolute left-1/3 -top-20 w-80 h-80 bg-[#C29FFC]/15 rounded-full blur-3xl" />
+      <div className="relative h-24 -mt-1">
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#13111a" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
         </svg>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/20 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* What is Yote section */}
-      <section className="relative py-32 px-8 bg-[#13111a] overflow-visible">
-        <div className="absolute right-0 top-0 w-96 h-96 bg-[#A875FB]/10 rounded-full blur-3xl" />
-        <div className="absolute left-1/4 -bottom-32 w-80 h-80 bg-[#A875FB]/10 rounded-full blur-3xl" />
+      <section className="relative py-32 px-8 bg-[#13111a]">
+        <div className="absolute right-0 top-1/2 w-96 h-96 bg-[#A875FB]/10 rounded-full blur-3xl -translate-y-1/2" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#A875FB] to-[#FEDAD6] font-bold text-sm uppercase tracking-widest mb-6">What is coyote moon?</span>
           <h2 className="text-5xl font-bold text-white mt-4 mb-8 leading-tight">
@@ -189,18 +188,17 @@ export default function Home() {
       </section>
 
       {/* Divider wave */}
-      <div className="relative h-24 bg-[#13111a] overflow-visible">
-        <div className="absolute left-1/4 -top-20 w-80 h-80 bg-[#A875FB]/10 rounded-full blur-3xl" />
+      <div className="relative h-24 bg-[#13111a]">
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0d0b12" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
         </svg>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-[#A875FB]/15 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* How it works section */}
-      <section className="py-32 px-8 relative bg-[#0d0b12] overflow-visible">
-        <div className="absolute left-1/4 top-1/4 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl" />
-        <div className="absolute right-1/4 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
-        <div className="absolute right-0 -bottom-32 w-80 h-80 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
+      <section className="py-32 px-8 relative bg-[#0d0b12]">
+        <div className="absolute left-1/4 top-1/2 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl -translate-y-1/2" />
+        <div className="absolute right-1/4 bottom-1/4 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-20">
@@ -260,17 +258,17 @@ export default function Home() {
       </section>
 
       {/* Divider wave */}
-      <div className="relative h-24 bg-[#0d0b12] overflow-visible">
-        <div className="absolute right-0 -top-20 w-80 h-80 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
+      <div className="relative h-24 bg-[#0d0b12]">
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#13111a" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
         </svg>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#FEDAD6]/10 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* Features grid */}
-      <section className="py-32 px-8 bg-[#13111a] relative overflow-visible">
-        <div className="absolute left-0 top-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
-        <div className="absolute right-1/4 bottom-0 w-72 h-72 bg-[#A875FB]/10 rounded-full blur-3xl" />
+      <section className="py-32 px-8 bg-[#13111a] relative">
+        <div className="absolute left-0 top-1/2 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl -translate-y-1/2" />
+        <div className="absolute right-1/4 bottom-1/4 w-72 h-72 bg-[#A875FB]/10 rounded-full blur-3xl" />
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-3 gap-6">
             {/* Card 1 */}
@@ -325,9 +323,8 @@ export default function Home() {
       </section>
 
       {/* Connect section */}
-      <section className="py-32 px-8 bg-[#13111a] relative overflow-visible">
+      <section className="py-32 px-8 bg-[#13111a] relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#A875FB]/20 via-transparent to-transparent" />
-        <div className="absolute left-1/4 -bottom-32 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#A875FB] to-[#FEDAD6] font-bold text-sm uppercase tracking-widest mb-4">Find Yote</span>
           <h2 className="text-5xl font-bold text-white mt-4 mb-16">Where to Interact</h2>
@@ -373,18 +370,18 @@ export default function Home() {
       </section>
 
       {/* Divider wave */}
-      <div className="relative h-24 bg-[#13111a] overflow-visible">
-        <div className="absolute left-1/4 -top-20 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl" />
+      <div className="relative h-24 bg-[#13111a]">
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0d0b12" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
         </svg>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#A875FB]/20 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* CTA section */}
-      <section className="py-32 px-8 relative bg-[#0d0b12] overflow-visible">
+      <section className="py-32 px-8 relative bg-[#0d0b12]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#A875FB]/20 via-transparent to-transparent" />
-        <div className="absolute left-0 top-1/3 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2" />
-        <div className="absolute right-0 top-1/3 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2" />
+        <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute right-0 top-1/2 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
 
         {/* Yote peeking from bottom right */}
         <div className="absolute -bottom-4 right-8 md:right-24 lg:right-32">
@@ -449,11 +446,11 @@ export default function Home() {
       </section>
 
       {/* Divider wave */}
-      <div className="relative h-24 bg-[#0d0b12] overflow-visible">
-        <div className="absolute right-1/4 -top-20 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
+      <div className="relative h-24 bg-[#0d0b12]">
         <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path fill="#0a090f" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
         </svg>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/10 via-transparent to-transparent pointer-events-none" />
       </div>
 
       {/* Footer */}
