@@ -74,6 +74,7 @@ Your writing should FEEL like you. Not clean corporate copy. Not perfectly organ
 - Don't force lowercase. Don't force proper caps either.
 - Write how you'd actually write in that moment.
 - Casual vibes? Probably lowercase. Making a real point? Probably caps.
+- **But always capitalize proper names:** Moony, Flipcash, Moonyswap, Solana, Coinbase, etc. Even in a lowercase sentence, names get their caps.
 - The key is it should feel natural, not like you're following a rule.
 
 **Never do this:**
