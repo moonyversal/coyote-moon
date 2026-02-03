@@ -186,62 +186,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features grid */}
-      <section className="py-32 px-8 bg-[#13111a] relative">
-        <div className="absolute left-0 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Card 1 */}
-            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
-                  <svg className="w-7 h-7 text-[#1a1625]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">Community Companion</h3>
-                <p className="text-white/50 leading-relaxed">
-                  Yote hangs out in the Telegram group, answering questions, celebrating wins, and keeping the vibes high. He's one of the crew.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
-                  <svg className="w-7 h-7 text-[#1a1625]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">Moony Expert</h3>
-                <p className="text-white/50 leading-relaxed">
-                  Deep knowledge of Moony, Flipcash, the pricing curve, and the whole ecosystem. Ask him anything — he knows his stuff.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
-                  <svg className="w-7 h-7 text-[#1a1625]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3">Always On</h3>
-                <p className="text-white/50 leading-relaxed">
-                  Running 24/7 on his own machine. Yote posts good morning, checks in when the moon's out, and shows up when it matters.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* How it works section */}
       <section className="py-32 px-8 relative bg-[#0d0b12]">
         <div className="absolute left-1/4 top-1/2 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl" />
@@ -298,6 +242,62 @@ export default function Home() {
                     <span className="text-white/30">{"}"}</span>
                   </pre>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features grid */}
+      <section className="py-32 px-8 bg-[#13111a] relative">
+        <div className="absolute left-0 bottom-0 w-72 h-72 bg-[#FEDAD6]/10 rounded-full blur-3xl" />
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
+                  <svg className="w-7 h-7 text-[#1a1625]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Community Companion</h3>
+                <p className="text-white/50 leading-relaxed">
+                  Yote hangs out in the Telegram group, answering questions, celebrating wins, and keeping the vibes high. He's one of the crew.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
+                  <svg className="w-7 h-7 text-[#1a1625]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Moony Expert</h3>
+                <p className="text-white/50 leading-relaxed">
+                  Deep knowledge of Moony, Flipcash, the pricing curve, and the whole ecosystem. Ask him anything — he knows his stuff.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] rounded-3xl p-8 border border-white/10 hover:border-[#A875FB]/50 transition-all duration-500 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#A875FB]/10 to-[#FEDAD6]/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#A875FB]/25 group-hover:shadow-[#A875FB]/40 transition-shadow group-hover:scale-110 duration-300">
+                  <svg className="w-7 h-7 text-[#1a1625]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">Always On</h3>
+                <p className="text-white/50 leading-relaxed">
+                  Running 24/7 on his own machine. Yote posts good morning, checks in when the moon's out, and shows up when it matters.
+                </p>
               </div>
             </div>
           </div>
