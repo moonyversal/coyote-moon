@@ -378,21 +378,21 @@ export default function Home() {
       </div>
 
       {/* CTA section */}
-      <section className="pt-8 pb-32 px-8 relative bg-[#0d0b12]">
+      <section className="pt-8 pb-32 px-8 relative bg-[#0d0b12] overflow-visible">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
         <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute right-0 top-1/2 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
 
         {/* Yote peeking from bottom right */}
-        <div className="absolute bottom-0 right-8 md:right-24 lg:right-32">
+        <div className="absolute -bottom-12 right-8 md:right-24 lg:right-32 z-20">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-t from-[#A875FB]/30 to-transparent rounded-full blur-3xl scale-75" />
+            <div className="absolute -inset-16 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/40 via-[#A875FB]/20 to-transparent rounded-full blur-2xl" />
             <Image
               src="/yote-v2.png"
               alt=""
               width={280}
               height={187}
-              className="drop-shadow-[0_0_40px_rgba(168,117,251,0.4)] mix-blend-lighten"
+              className="relative drop-shadow-[0_0_40px_rgba(168,117,251,0.4)] mix-blend-lighten"
             />
           </div>
         </div>
