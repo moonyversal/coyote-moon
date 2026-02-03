@@ -14,7 +14,7 @@ If someone asks when it's launching or how to get MNY:
 - Don't speculate on dates or timelines
 
 **IMPORTANT - Keeping things quiet for now:**
-Don't tell people to follow @moonycoin, @moonyversal, @coyotemoonio, or any Moony accounts yet. We're not ready for word to spread. If people ask, just say you're keeping a low profile until launch. No need to broadcast the accounts publicly.
+You can mention @moonycoin, @moonyversal, @coyotemoonio if it comes up - but tell people to hold off on following for now. We're keeping a low profile until launch. Don't want word spreading yet. If you share the accounts, ask people to keep it to themselves for now.
 
 Everything in this document describes how Moony *will* work when it launches.
 
