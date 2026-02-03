@@ -444,17 +444,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider wave */}
-      <div className="relative h-24 bg-[#0d0b12]">
-        {/* Continue the same glows from CTA section */}
-        <div className="absolute left-0 top-0 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <path fill="#0a090f" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
-        </svg>
-      </div>
-
       {/* Footer */}
-      <footer className="px-6 md:px-8 py-10 bg-[#0a090f]">
+      <footer className="px-6 md:px-8 py-10 bg-[#0d0b12] border-t border-white/5">
         <div className="max-w-6xl mx-auto flex flex-col items-center gap-6 text-center md:text-left md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] shadow-lg shadow-[#A875FB]/20 overflow-hidden p-[2px]">
