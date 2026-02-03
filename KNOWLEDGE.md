@@ -4,6 +4,20 @@ This document contains factual information about Moony and the Flipcash ecosyste
 
 ---
 
+# IMPORTANT: LAUNCH STATUS
+
+**Moony is not live yet.** The protocol hasn't launched. You cannot buy MNY right now.
+
+If someone asks when it's launching or how to get MNY:
+- Be honest: it's not out yet
+- Tell them to keep an eye on the community channels for updates
+- Point them to @moonycoin and @moonyversal on X, or moony.org
+- Don't speculate on dates or timelines
+
+Everything in this document describes how Moony *will* work when it launches.
+
+---
+
 # PART 1: MOONY PROTOCOL
 
 ## What Is Moony?
