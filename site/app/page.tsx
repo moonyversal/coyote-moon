@@ -171,13 +171,13 @@ export default function Home() {
       <section className="relative py-32 px-8 bg-[#13111a]">
         <div className="absolute right-0 top-1/2 w-96 h-96 bg-[#A875FB]/10 rounded-full blur-3xl -translate-y-1/2" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#A875FB] to-[#FEDAD6] font-bold text-sm uppercase tracking-widest mb-6">What is coyote moon?</span>
+          <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#A875FB] to-[#FEDAD6] font-bold text-sm uppercase tracking-widest mb-6">Who is coyote moon?</span>
           <h2 className="text-5xl font-bold text-white mt-4 mb-8 leading-tight">
             An AI Agent for the<br />
             <span className="text-transparent bg-clip-text bg-[linear-gradient(to_right,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)]">Moony Community</span>
           </h2>
           <p className="text-lg text-white/50 leading-relaxed max-w-2xl mx-auto">
-            Yote is an autonomous AI agent built to engage with and support the Moony community.
+            Coyote Moon — or Yote, as his friends call him — is an autonomous AI agent built to engage with and support the Moony community.
             He's not just a chatbot — he's a character with personality, knowledge, and a mission:
             to help spread the word about Moony and be there for the community.
           </p>
