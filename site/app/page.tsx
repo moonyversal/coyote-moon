@@ -383,7 +383,7 @@ export default function Home() {
         <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
 
         {/* Yote peeking from bottom right */}
-        <div className="absolute -bottom-12 right-8 md:right-24 lg:right-32 z-20">
+        <div className="absolute bottom-0 right-8 md:right-24 lg:right-32 z-20">
           <div className="relative">
             <div className="absolute -inset-24 -right-32 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A875FB]/40 via-[#A875FB]/20 to-transparent blur-3xl" />
             <Image
