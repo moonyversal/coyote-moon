@@ -186,6 +186,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider wave */}
+      <div className="relative h-24 bg-[#13111a]">
+        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path fill="#0d0b12" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
+
       {/* How it works section */}
       <section className="py-32 px-8 relative bg-[#0d0b12]">
         <div className="absolute left-1/4 top-1/2 w-96 h-96 bg-[#A875FB]/15 rounded-full blur-3xl" />
@@ -247,6 +254,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Divider wave */}
+      <div className="relative h-24 bg-[#0d0b12]">
+        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path fill="#13111a" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
 
       {/* Features grid */}
       <section className="py-32 px-8 bg-[#13111a] relative">
@@ -351,6 +365,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider wave */}
+      <div className="relative h-24 bg-[#13111a]">
+        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path fill="#0d0b12" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
+
       {/* CTA section */}
       <section className="py-32 px-8 relative bg-[#0d0b12]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#A875FB]/20 via-transparent to-transparent" />
@@ -419,8 +440,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Divider wave */}
+      <div className="relative h-24 bg-[#0d0b12]">
+        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path fill="#0a090f" d="M0,50 C480,0 960,100 1440,50 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
+
       {/* Footer */}
-      <footer className="border-t border-white/5 px-6 md:px-8 py-10 bg-[#0a090f]">
+      <footer className="px-6 md:px-8 py-10 bg-[#0a090f]">
         <div className="max-w-6xl mx-auto flex flex-col items-center gap-6 text-center md:text-left md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-[linear-gradient(to_bottom,#A875FB,#C29FFC,#FEDAD6,#FFF2D9)] shadow-lg shadow-[#A875FB]/20 overflow-hidden p-[2px]">
