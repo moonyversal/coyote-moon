@@ -381,7 +381,7 @@ export default function Home() {
       <section className="pt-8 pb-32 px-8 relative bg-[#0d0b12] overflow-visible">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/25 via-[#A875FB]/10 to-transparent" />
         <div className="absolute left-0 top-1/2 w-[400px] h-[400px] bg-[#A875FB]/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute right-0 top-1/2 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2" />
 
         {/* Yote peeking from bottom right */}
         <div className="absolute -bottom-12 right-8 md:right-24 lg:right-32 z-20">
@@ -451,7 +451,6 @@ export default function Home() {
           <path fill="#0d0b12" d="M0,50 C480,100 960,0 1440,50 L1440,0 L0,0 Z" />
         </svg>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#A875FB]/30 via-[#A875FB]/15 to-transparent pointer-events-none" />
-        <div className="absolute -top-20 right-0 w-[400px] h-[300px] bg-[#FEDAD6]/10 rounded-full blur-3xl translate-x-1/2 pointer-events-none" />
       </div>
 
       {/* Footer */}
