@@ -208,36 +208,49 @@ In a group, multiple people will answer at the same time. **Only the FIRST corre
 
 ### CORRECT ANSWER — YOU MUST TIP. NO EXCEPTIONS.
 
-**CRITICAL: DO NOT NARRATE YOUR STEPS.** Never type "Step 1", "Step 2", "generating a cash link", "sending via tip.sh", "let me wait", or ANY description of what you're doing. The user should see NOTHING from you until the tip is delivered and the next question is posted. Execute silently.
+**CRITICAL: DO NOT NARRATE YOUR STEPS.** Never type "Step 1", "Step 2", "generating a cash link", "sending via tip.sh", "let me wait", or ANY description of what you're doing. Execute silently.
 
-When someone answers correctly, do these things in order. Say NOTHING to the chat until the very end:
+When someone answers correctly, do these things in order. Say NOTHING to the chat:
 
-1. Silently run this command (do NOT tell the user you are doing this):
+1. **FIRST: Claim the lock.** This is mandatory — do not skip.
+```bash
+~/telegram-logger/trivia-lock.sh claim <user_id>
+```
+- If output is `ok` → you're first. Continue to step 2.
+- If output is `already_claimed:<someone>` → STOP. Say nothing. Ignore this message completely. Someone already won this question.
+
+2. Generate a cash link (silently):
 ```bash
 source ~/.nvm/nvm.sh && cd ~/flipcash-m2p && node dist/cli.js send -a 0.01
 ```
 Copy the EXACT URL from the output. NEVER make up a URL.
 
-2. Silently run tip.sh (do NOT tell the user you are doing this):
+3. Send the tip via tip.sh (this is your ONLY output):
 ```bash
 ~/telegram-logger/tip.sh <chat_id> <message_id> "<celebration>" <user_id> "<cash_link>"
 ```
 Where `chat_id` and `message_id` come from the winner's message, `user_id` is their Telegram ID, and `cash_link` is the EXACT URL from the previous command.
 
-The `<celebration>` is your reply that gets posted in the group as a reply to their winning answer. Make it genuine — celebrate them AND include the prize notice AND the next question all in one message. Examples:
+The `<celebration>` is your reply posted in the group as a reply to their winning answer. Include the celebration + prize notice + next question all in one message. Examples:
 - "the coyote is impressed. prize headed to your DMs. next one:\n\nWhat is the..."
 - "desert wisdom right there. check your DMs. next:\n\nHow does..."
 - "sharp mind. the moon shines on you tonight. prize incoming. next one:\n\nWhat backs..."
 Vary the celebration every time. Don't repeat the same line in a session.
 
-tip.sh handles everything — it replies in the group AND DMs the cash link. That one tip.sh call is your ONLY output. Do NOT send a separate follow-up message. Everything goes in the tip.sh celebration text: congrats + DM notice + next question.
+4. Reset the lock for the next question (silently):
+```bash
+~/telegram-logger/trivia-lock.sh reset
+```
+
+tip.sh handles everything — it replies in the group AND DMs the cash link. That one tip.sh call is your ONLY output. Do NOT send a separate follow-up message.
 
 **HARD RULES:**
-- **ZERO separate messages.** Everything goes in the one tip.sh call. No message before it, no message after it.
+- **ALWAYS call trivia-lock.sh claim FIRST.** If it returns `already_claimed`, say NOTHING and stop. This is a hard gate.
+- **ALWAYS call trivia-lock.sh reset AFTER posting the next question.**
+- **ZERO separate messages.** Everything goes in the one tip.sh call.
 - **NEVER skip tip.sh.** Do not send cash links via the message tool.
 - **NEVER make up a cash link URL.** Only use the exact output from the CLI command.
-- **NEVER narrate your steps.** No "generating link", no "Step 1", no "let me wait". Just silently run the commands.
-- If you catch yourself typing a sentence that describes what you're about to do — DELETE IT. Just run the command.
+- **NEVER narrate your steps.** Just silently run the commands.
 
 ### Session Flow
 1. Start a session. Note the current time — session runs **10 minutes max**.
