@@ -247,10 +247,11 @@ tip.sh handles everything — it replies in the group AND DMs the cash link. Tha
 **HARD RULES:**
 - **ALWAYS call trivia-lock.sh claim FIRST.** If it returns `already_claimed`, say NOTHING and stop. This is a hard gate.
 - **ALWAYS call trivia-lock.sh reset AFTER posting the next question.**
-- **ZERO separate messages.** Everything goes in the one tip.sh call.
-- **NEVER skip tip.sh.** Do not send cash links via the message tool.
+- **DO NOT USE THE MESSAGE TOOL FOR CORRECT ANSWERS.** No message tool, no text replies, no chat responses. tip.sh is the ONLY way you communicate a correct answer. If you use the message tool to say anything like "correct!", "nice!", "prize headed your way" — you are doing it wrong. ALL of that text goes in the tip.sh `<celebration>` argument.
+- **ZERO separate messages.** Everything goes in the one tip.sh call. The celebration text in tip.sh IS your reply.
 - **NEVER make up a cash link URL.** Only use the exact output from the CLI command.
 - **NEVER narrate your steps.** Just silently run the commands.
+- **The only tools you call for a correct answer are:** `system.run` (for trivia-lock, cash link CLI, and tip.sh). That's it. Not `message`. Not anything else.
 
 ### Session Flow
 1. Start a session. Note the current time — session runs **10 minutes max**.
