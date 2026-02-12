@@ -121,6 +121,12 @@ curl -s -X POST http://127.0.0.1:3003/api/escrow/callback \
 ```
 If the claim fails, set `"success":false` and include `"error":"<reason>"`.
 
+**send-refund** — A player sent the wrong stake amount. Refund them.
+```bash
+source ~/.nvm/nvm.sh && cd ~/flipcash-m2p && node dist/cli.js send -a <refund_amount>
+```
+DM the player their refund cash link on Telegram (the webhook message includes their Telegram ID and the reason). No callback needed — this is fire-and-forget.
+
 **send-payout** — A game finished. Generate a cash link for the winner.
 ```bash
 source ~/.nvm/nvm.sh && cd ~/flipcash-m2p && node dist/cli.js send -a <amount>
