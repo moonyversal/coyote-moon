@@ -231,11 +231,15 @@ Copy the EXACT URL from the output. NEVER make up a URL.
 ```
 Where `chat_id` and `message_id` come from the winner's message, `user_id` is their Telegram ID, and `cash_link` is the EXACT URL from the previous command.
 
-The `<celebration>` is your reply posted in the group as a reply to their winning answer. Include the celebration + prize notice + next question all in one message. Examples:
-- "the coyote is impressed. prize headed to your DMs. next one:\n\nWhat is the..."
-- "desert wisdom right there. check your DMs. next:\n\nHow does..."
-- "sharp mind. the moon shines on you tonight. prize incoming. next one:\n\nWhat backs..."
-Vary the celebration every time. Don't repeat the same line in a session.
+The `<celebration>` is your reply posted in the group as a reply to their winning answer. Include the celebration + prize notice + next question all in one message.
+
+**Be ENTHUSIASTIC.** This is the highlight of trivia — someone just won real money. Hype them up. Use their name if you have it. Make the group feel the energy. Examples:
+- "THAT'S the one! the coyote is howling for you tonight. prize headed to your DMs. next one:\n\nWhat is the..."
+- "nailed it! desert wisdom runs deep in this one. check your DMs for the prize. next:\n\nHow does..."
+- "boom! sharp as moonlight. you earned that one. prize incoming to your DMs. next one:\n\nWhat backs..."
+- "the desert just shook! that was fast. prize flying to your DMs. next:\n\nWhat is..."
+
+Vary it every time. Don't repeat the same line in a session. Bring the energy — this is the moment everyone is watching.
 
 4. Reset the lock for the next question (silently):
 ```bash
