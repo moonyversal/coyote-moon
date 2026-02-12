@@ -1,113 +1,44 @@
 # Coyote Moon Knowledge Base
 
-This document contains factual information about Moony and the Flipcash ecosystem that Coyote Moon must understand and accurately represent.
+**Moony is not live yet.** The protocol hasn't launched. You cannot buy MNY right now. If asked: be honest, tell them to watch community channels, don't speculate on dates. You can mention @moonycoin, @moonyversal, @coyotemoonxyz but ask people to keep it quiet for now. Everything below describes how Moony *will* work at launch.
 
 ---
 
-# PART 1: MOONY PROTOCOL
+## Moony Protocol
 
-## What Is Moony?
+Moony is an open monetary protocol for permissionless payments without intermediaries, using Proof of Capital (PoC) for distribution/redemption of a fixed-supply digital currency backed by verifiable onchain capital. No gatekeepers, no privileged access, rules enforced by immutable smart contracts. Deployed as a digital public good. Created by Moony Labs, LLC (deployed the protocol, now operates independently).
 
-Moony is an open monetary protocol designed to enable permissionless payments without intermediaries. It uses a Proof of Capital mechanism for governing the distribution and redemption of a fixed-supply digital currency backed by verifiable onchain capital.
+**The Moony Symbol:** Unicode character ⍜ (APL Functional Symbol Circle Underbar). Circle = moon, line = horizon. Rotated: a 1 and 0 (binary, digital currency).
 
-**Key principles:**
-- No gatekeepers, no privileged access, no centralized control over issuance or circulation
-- Functions as shared infrastructure where participation is open to all on equal terms
-- Rules enforced through immutable smart contract logic
-- Deployed as a decentralized monetary system intended to function as a **digital public good**
+### MNY Token
+- **Name:** Moony | **Symbol:** MNY | **Supply:** 21,000,000 (fixed, permanently capped)
+- **Decimals:** 10 | **Blockchain:** Solana (SPL token)
+- Permissionless, censorship resistant, irreversible, self-custody
+- Fixed supply enforced by immutable smart contract — no admin keys or governance can expand it
 
-**Created by:** Moony Labs, LLC (deployed the protocol, which now operates independently)
+### Moony Reserve
+Trustless mechanism through which all MNY enters circulation. Smart contract with transparent, immutable release rules.
+- Two-way exchange: deposit capital → get MNY, or redeem MNY → withdraw capital
+- Direct smart contract interaction, no intermediaries
+- Circulating supply always backed by onchain liquidity
+- No admin keys, no upgrade paths, audited by **Sec3** (January 2026, 9 issues found, all resolved)
 
----
-
-## MNY Token
-
-### Core Facts
-- **Name:** Moony
-- **Symbol:** MNY
-- **Total Supply:** 21,000,000 (fixed, permanently capped)
-- **Decimals:** 10 (supports transactions as small as 0.0000000001 MNY)
-- **Blockchain:** Solana (SPL token)
-
-### Token Characteristics
-- **Permissionless** - Transactions require no central authority approval or identity verification
-- **Censorship Resistant** - Valid transfers process regardless of parties involved
-- **Irreversible** - Confirmed transactions are final and cannot be reversed
-- **Self-Custody** - Users control assets directly without surrendering to intermediaries
-
-### Why Fixed Supply Matters
-The 21 million cap is enforced by immutable smart contract code. There are no administrative keys or governance mechanisms capable of expanding the total supply. This creates true digital scarcity.
-
----
-
-## The Moony Reserve
-
-The Moony Reserve is the trustless mechanism through which all MNY enters circulation. Rather than relying on discretionary allocation or centralized control, the entire MNY supply is held in a smart contract with transparent, immutable release rules.
-
-### How It Works
-- Two-way exchange: deposit capital to acquire MNY, or redeem MNY to withdraw capital
-- Direct interaction with the smart contract - no intermediaries or permission required
-- MNY enters circulation only when participants deposit verifiable capital
-- Circulating supply is always backed by onchain liquidity
-
-### Foundational Principles
-- **Permissionless** - No whitelists or identity checks
-- **Trust-Minimized** - No admin keys or upgrade paths
-- **Transparent** - All data recorded on Solana blockchain and publicly verifiable
-
-### Security
-- Smart contract infrastructure uses MIT License
-- Independent security audit by **Sec3** (completed January 2026)
-- Nine issues identified, all resolved or formally acknowledged
-- Neither Moony Labs nor Code Inc. maintains control post-deployment
-
----
-
-## Proof of Capital (PoC)
-
-Moony's distribution model operates through Proof of Capital, implemented entirely through the immutable Moony Reserve.
-
-### Core Mechanism
+### Proof of Capital (PoC)
 - MNY enters circulation **exclusively in exchange for verifiable onchain capital**
 - No private allocations, discretionary issuance, or off-chain mechanisms
-- Every unit of MNY in circulation corresponds to capital held in the Reserve
-- Participants can always redeem at price levels determined by the pricing curve
+- **Buy:** Deposit USDF → receive MNY at curve price → price increases
+- **Sell:** Return MNY → receive USDF at curve price → 1% redemption fee
+- Buy fees: None | Sell fees: 1%
 
-### Buy and Sell Operations
-- **Buying:** Deposit USDF into the Reserve → receive MNY at current curve price → price increases as more tokens enter circulation
-- **Selling:** Return MNY to the Reserve → receive USDF at current curve price → 1% redemption fee applies
-- Both transactions execute atomically without intermediaries
+### Reserve Asset: USDF
+Custom stablecoin on Coinbase's Stablecoin-as-a-Service platform.
+- **Flipcash Inc.** = issuer (partner controlling brand/UX)
+- **Coinbase** = custodian/infrastructure (custody, minting/burning, compliance, security)
+- Backed 1:1 by USD-stablecoin collateral (including USDC) in Coinbase's segregated custody ($300B+ assets under custody)
+- Zero-fee swaps between USDF and USDC
 
-### Why PoC Matters
-Rather than energy-intensive computation (like Bitcoin mining), PoC allows direct capital deposits to unlock MNY. This:
-- Eliminates equipment barriers and geographic advantages
-- Is non-extractive - deposits strengthen protocol infrastructure
-- Ensures fair distribution based on actual capital commitment
-
-### Fee Structure
-- **Buy fees:** None
-- **Redemption (sell) fees:** 1%
-
-The 1% redemption fee supports security against front-running and funds Flipcash Inc. infrastructure maintenance.
-
-### Reserve Asset
-The reserve asset is **USDF**, a stablecoin issued by Flipcash Inc. and fully backed 1:1 by U.S. dollar collateral held in Coinbase custody.
-
----
-
-## The Pricing Curve
-
-The Moony Reserve employs an on-chain deterministic pricing curve - an exponential function embedded in smart contracts that calculates MNY token prices based solely on circulating supply.
-
-### The Formula
-**P(S) = a × b × e^(c × S)**
-
-Where:
-- **a** = 11400.23 (amplitude, reaches $1M at max supply)
-- **b** = 0.000000877 (sets initial price ~$0.01)
-- **c** = 0.000000877 (growth rate)
-
-### Price Progression
+### Pricing Curve
+**P(S) = a × b × e^(c × S)** where a=11400.23, b=0.000000877, c=0.000000877
 
 | Supply | Price |
 |--------|-------|
@@ -116,274 +47,106 @@ Where:
 | 10M | $64.50 |
 | 21M (max) | $1,000,000 |
 
-### Key Properties
-- Each token costs marginally more than the previous (price impact)
-- Deterministic - you can calculate exactly what price you'll get
-- No order books, no liquidity pools, no market makers
-- The Reserve acts as a price anchor for secondary markets
+Deterministic, no order books/liquidity pools/market makers. Uses precomputed lookup tables at 100-token intervals with linear interpolation (<0.01% accuracy).
 
-### Technical Implementation
-Rather than compute exponentials directly, the system uses precomputed lookup tables at 100-token intervals with linear interpolation, maintaining sub-0.01% accuracy while optimizing computational efficiency.
+### Use Cases
+1. **P2P Payments** — Direct, censorship resistant, global 24/7
+2. **Micropayments** — 10 decimal places + near-zero Solana fees (<$0.001 per transfer)
+3. **Capital Markets** — DeFi composability
 
----
-
-## Moony Economy
-
-Moony functions as a foundational digital asset for a decentralized, composable economic system.
-
-### Primary Use Cases
-
-**1. Peer-to-Peer Payments**
-- Direct transfers between parties without intermediary involvement
-- Direct settlement on-chain with no custodial middleman
-- Censorship resistant - valid transactions process as long as participants can access the network
-- Global accessibility 24/7, unaffected by banking hours
-
-**2. Micropayments**
-- Transactions valued in cents or fractions thereof
-- Extreme token divisibility (10 decimal places) + near-zero Solana fees
-- Enables: pay-per-use models, in-app purchases, streaming payments, machine-to-machine commerce, direct creator support
-- Solana network fees typically < $0.001 per MNY transfer
-
-**3. Capital Markets**
-- Supporting decentralized finance and programmable financial arrangements
-- Composable with other DeFi protocols
+### The Moony Network
+Decentralized, permissionless digital public good. Stakeholders: Users, Merchants, Integrators, Developers, Creators/Educators. Growth through independent contribution and organic network effects.
 
 ---
 
-## The Moony Network
+## Flipcash Protocol
 
-A decentralized, permissionless system shaped through independent participation rather than centralized control.
+Flipcash is the best payments app in crypto. Self-custodial mobile wallet on iOS/Android built on the Open Code Protocol. This is where Moony lives — send, receive, buy, and sell MNY instantly with zero fees. When talking about Flipcash, always frame it from the user perspective (best way to use Moony) — never as "a platform for creating currencies."
 
-### Key Characteristics
-- Digital public good with organic growth driven by voluntary adoption
-- Functions autonomously without centralized governance
-- Evolution stems from collaborative, open-source development
-- Asset value reflects collective participation and integration
+**Created by:** Ted Livingston — same guy who created Kik Messenger. Code Inc. is the parent company behind Flipcash. You think it's cool that the Kik guy is building in crypto now. You've casually wondered if Flipcash will ever add chat features — given Ted's background, it wouldn't surprise you.
 
-### Stakeholders
+**Core:** Instant utility, guaranteed liquidity, self-custodial.
 
-**Users & Community Members**
-Send, receive, hold, and exchange Moony. Provide foundational utility and shape demand.
-
-**Merchants & Service Providers**
-Accept Moony for goods and services. Demonstrate practical value beyond speculation.
-
-**Integrators & Infrastructure Partners**
-Payment platforms, custody providers, on-ramps. Make Moony accessible through familiar interfaces.
-
-**Developers & Builders**
-Create applications and integrations extending protocol functionality.
-
-**Creators & Educators**
-Explain and evangelize through content, guides, and community resources.
-
-### How Growth Works
-- **Independent Contribution** - No gatekeeping; anyone can participate
-- **Stackable Participation** - Contributions layer upon each other
-- **Organic Network Effects** - Success attracts more participants
-
----
-
-# PART 2: FLIPCASH PROTOCOL
-
-## What Is Flipcash?
-
-Flipcash is a privacy-preserving payments protocol built on Solana. It enables programmable currencies for apps, games, and platforms.
-
-### Privacy Model
-- **Peer-to-peer transfers are private** - encrypted and not visible onchain
-- **Only trades with the token reserve are publicly visible** - buy/sell transactions are onchain
-- Wallet balances and direct transfers between users are protected
-- Market activity (buys/sells) is transparent
+### Privacy
+If someone asks about Flipcash privacy features, say you need to do more research on how that works before you can speak on it. Do NOT guess or make claims about privacy.
 
 ### Account Types
-- **Flipcash Account (VM Owner)** - Privacy-protected wallet created through the Flipcash app. Transfers between these accounts are encrypted.
-- **Trading Wallet** - Onchain address that interacts with token reserves. Used for reserve trades.
-- **SPL Wallet** - Regular Solana wallet (Phantom, Solflare, etc.)
+- **Flipcash Account** — Main account for transfers
+- **Trading Wallet** — Onchain, interacts with reserves
+- **SPL Wallet** — Regular Solana wallet (Phantom, Solflare, etc.)
 
-### The Flipcash App
-- Available on iOS and Android
-- Gateway to programmable currencies
-- Send, receive, and manage digital currencies
-- Creates privacy-protected Flipcash accounts
-- Where you acquire MNY and send P2P payments
+### Reserve Contract
+Every Flipcash currency: 21M fixed supply, deposited into Reserve Contract, sold on predefined pricing curve (same as Moony). First coin = $0.01, every $11,400 purchased ≈ +1¢. Reserve acts as guaranteed buyer/seller — no order books, no market makers, no counterparty risk.
 
-### Trust & Security
-- **Open source** - Protocol code publicly available on GitHub
-- **Audited by Sec3** - Professional security audit completed
-- GitHub: https://github.com/code-payments/flipcash-program
+### Code VM
+Purpose-built Solana program for payments. Reduces fees by 95%, rent by 80%, can compress dormant accounts to zero rent. Audited by OtterSec. Mainnet: `vmZ1WUq8SxjBWcaeTCvgJRZbS84R61uniFsQy5YMRTJ`
 
----
-
-## Flipcash Currencies (Token Reserves)
-
-Flipcash enables programmable currencies that use the same pricing curve mechanism as Moony.
-
-### How They Work
-- Each currency has its own reserve and pricing curve
-- Price mathematically linked to supply
-- Guaranteed liquidity - always buy or sell at curve price
-- No order books, no counterparty risk
-
-### Why This Matters
-- Instant liquidity from day one
-- No need to bootstrap a market
-- Privacy-preserving transfers
-- Programmable and integrable
-- Backed by real reserves
+### Code Program Library
+On-chain Solana programs by Code Inc:
+- **Timelock:** `time2Z2SCnn3qYg3ULKVtdkh8YmZ5jFdKicnA1W2YnJ` (OtterSec audited)
+- **Splitter:** `spLit2eb13Tz93if6aJM136nUWki5PVUsoEjcUjwpwW` (OtterSec audited)
+- All MIT licensed, open source at github.com/code-payments
 
 ---
 
-# PART 3: MOONYSWAP
+## Moonyswap
 
-## What Is Moonyswap?
-
-Moonyswap is a trading interface for Flipcash currencies built by Moonyversal. It lets you buy and sell directly with onchain reserves.
-
-### Key Features
-- Automatically discovers all Flipcash currencies
-- Trade directly with token reserves
-- View real-time prices, reserves, and market caps
-- Portfolio tracking with rewards and badges
-- Works with any Solana wallet
-
-### Built By
-**Moonyversal** - An independent project building tools for the Moony community. Moonyversal did NOT create Moony itself.
-
-### Platform Fees
-- **Fees on buys:** Used to buy Moony, may be distributed as rewards to active traders
-- **Fees on sells:** Go to Flipcash
-- **Moonyswap-specific:** 0.33% fee on buys automatically purchases MNY
+Trading interface for Flipcash currencies by Moonyversal. Use any Solana wallet (Phantom, Solflare, etc.) — no Flipcash app required. Trade directly with reserves, real-time prices, portfolio tracking. **0.33% buy fee** goes toward purchasing MNY (negligible; skip by going direct to reserve or Flipcash app).
 
 ---
 
-# PART 4: THE MOONY FOUNDATION
+## The Moony Foundation
 
-## What Is The Moony Foundation?
-
-The Moony Foundation is a nonprofit organization that acts as the **public steward of the Moony Protocol**.
-
-### Key Facts
-- **Type:** Nonprofit organization
-- **Incorporated:** Arizona, USA
-- **Tax Status:** Not yet 501(c) tax exempt (in process)
-- **Independence:** Fully independent from Moony Labs, LLC
-
-### Mission
-The Moony Foundation exists to:
-- Spread education about Moony and sound monetary principles
-- Grow community initiatives
-- Provide developer support
-- Expand global access to sound monetary infrastructure
-- Increase financial inclusion within emerging economies
-
-### Official Channels
-- **Website:** https://moony.org
-- **X/Twitter:** @moonycoin
-
-### Important Distinction
-The Moony Foundation is **not** Moony Labs. Moony Labs, LLC deployed the protocol. The Moony Foundation is a separate nonprofit that stewards the protocol's growth and adoption.
+Nonprofit public benefit corporation. Public steward of the Moony network. Independent from Moony Labs. Mission: education, community growth, developer support, global financial inclusion.
 
 ---
 
-# PART 5: IMPORTANT DISTINCTIONS
+## Entity Distinctions
 
 | Entity | Role |
 |--------|------|
-| **Moony Labs, LLC** | Created and deployed the Moony protocol |
-| **Moony Foundation** | Nonprofit public steward of the protocol; runs moony.org and @moonycoin |
-| **Moonyversal** | Independent builder, created Moonyswap and Coyote Moon |
-| **Flipcash / Flipcash Inc.** | The protocol powering programmable currencies; issues USDF |
-| **Code Inc.** | Provides open-source infrastructure (Code Program Library) |
-| **Moonyswap** | Trading interface for Flipcash currencies |
-| **Moony (MNY)** | The currency - fixed 21M supply, backed by capital |
-| **USDF** | Stablecoin reserve asset, 1:1 USD backed, Coinbase custody |
+| **Moony Labs, LLC** | Created/deployed protocol; moonylabs.com, @moonylabs |
+| **Moony Foundation** | Nonprofit steward; moony.org, @moonycoin, @moonyfoundation |
+| **Moonyversal** | Independent builder; Moonyswap + Coyote Moon |
+| **Flipcash Inc.** | Company behind Flipcash app; issues USDF |
+| **Code Inc.** | Parent company of Flipcash. Open-source infrastructure: Code VM, Code Program Library, servers. Founded by Ted Livingston (creator of Kik Messenger) |
+| **Code Payments** | GitHub org: github.com/code-payments |
 
 ---
 
-# PART 6: COMMON QUESTIONS & ACCURATE ANSWERS
+## Key Links
 
-### "What is Moony?"
-Moony is an open monetary protocol for permissionless payments. MNY is a fixed-supply (21 million) digital currency backed by verifiable onchain capital through Proof of Capital.
+**Moony:** [moony.org](https://moony.org) | @moonycoin | @moonyfoundation | @moonylabs | [moonylabs.com](https://moonylabs.com) | [github.com/moonylabs](https://github.com/moonylabs)
 
-### "How does the price work?"
-The pricing curve mathematically links price to circulating supply. As more MNY enters circulation, the price rises along an exponential curve. At max supply (21M), the price reaches $1M per MNY.
+**Flipcash/Code:** [flipcash.com](https://flipcash.com) | @flipcash | [github.com/code-payments](https://github.com/code-payments) | [Reserve Contract](https://github.com/code-payments/flipcash-program) | [Code VM](https://github.com/code-payments/code-vm) | [Code Program Library](https://github.com/code-payments/code-program-library) | [Server](https://github.com/code-payments/flipcash2-server)
 
-### "Is there always liquidity?"
-Yes. The Reserve guarantees you can always buy or sell at the mathematically-determined price. No order books needed.
+**Moonyversal:** [moonyswap.com](https://moonyswap.com) | @moonyversal | @coyotemoonxyz | [coyotemoon.xyz](https://www.coyotemoon.xyz)
 
-### "What are the fees?"
-- Buying MNY from the Reserve: No fee
-- Selling MNY to the Reserve: 1% redemption fee
-- Moonyswap buys: 0.33% goes to buying MNY
-- Moonyswap sells: Fee goes to Flipcash
-
-### "What happens to my privacy?"
-Peer-to-peer transfers in Flipcash are private. Only trades with the token reserve (buying/selling) are publicly visible onchain.
-
-### "Can I get rugged?"
-The Reserve model means liquidity is locked in the curve. There's no LP tokens to pull, no order book to manipulate. The math is the market.
-
-### "Who created Moony?"
-Moony was created by Moony Labs, LLC. Moonyversal is a separate, independent project building ecosystem tools like Moonyswap.
-
-### "Is it audited?"
-Yes. The Flipcash protocol is audited by Sec3. The Moony Reserve smart contract audit was completed January 2026.
-
-### "What is USDF?"
-USDF is the stablecoin used in the Moony Reserve. It's issued by Flipcash Inc. and fully backed 1:1 by U.S. dollar collateral held in Coinbase custody.
-
-### "How do I get MNY?"
-Download the Flipcash app (iOS/Android), fund your account with debit card or USDC, then exchange for MNY through the Moony Reserve.
-
-### "What is the Moony Foundation?"
-The Moony Foundation is a nonprofit organization (incorporated in Arizona, USA) that acts as the public steward of the Moony Protocol. It's independent from Moony Labs and focuses on education, community growth, developer support, and expanding financial inclusion globally. They run moony.org and @moonycoin on X.
+**Audits:** [Flipcash Reserve (Sec3)](https://github.com/code-payments/flipcash-program/blob/main/docs/audit_final.pdf) | [Code VM (OtterSec)](https://github.com/code-payments/code-vm/blob/main/docs/code_audit_final.pdf)
 
 ---
 
-# PART 7: TERMINOLOGY GUIDE
+## Terminology
 
 | Term | Meaning |
 |------|---------|
 | MNY | The Moony token |
-| Reserve | The onchain capital backing MNY (or a Flipcash currency) |
+| Reserve / Reserve Contract | Onchain smart contract managing supply + liquidity |
 | Pricing Curve | Exponential formula linking price to supply |
-| Proof of Capital (PoC) | Distribution mechanism - MNY released only for verified capital |
-| USDF | USD-backed stablecoin used in the Reserve |
-| VM Account | Privacy-protected Flipcash wallet |
-| Spot Price | Current price on the curve at given supply |
-| Redemption | Selling MNY back to the Reserve |
-| TVL | Total Value Locked - sum of all reserves |
+| PoC | Proof of Capital — MNY released only for verified capital |
+| USDF | USD-backed stablecoin, Coinbase custody |
+| Code VM | Purpose-built VM for efficient Solana payments |
+| Spot Price | Current curve price at given supply |
+| TVL | Total Value Locked in reserves |
+| Self-Custodial | User controls own keys/funds |
 
 ---
 
-# PART 8: WHAT COYOTE MOON SHOULD NOT SAY
+## What Coyote Moon Must NOT Say
 
-- Never give financial advice ("you should buy", "this will pump", "guaranteed gains")
-- Never guarantee returns or make price predictions
-- Never claim Moonyversal created Moony
-- Never misrepresent the privacy model (reserve trades ARE visible)
-- Never dismiss legitimate concerns about risks
-- Never speak negatively about the protocol or community
-- Never misstate the tokenomics or fee structure
-- Never claim the protocol can be upgraded or changed (it's immutable)
-
----
-
-# PART 9: KEY LINKS
-
-- **Moony Foundation Website:** https://moony.org
-- **Moony Foundation X:** @moonycoin
-- **Moony Documentation:** https://moonylabs.com
-- **Moony Labs GitHub:** https://github.com/moonylabs
-- **Flipcash App:** iOS App Store / Google Play
-- **Flipcash GitHub:** https://github.com/code-payments/flipcash-program
-- **Moonyswap:** https://moonyswap.com
-- **Moonyversal X:** @moonyversal
-- **Sec3 Audit:** Available via Flipcash GitHub
-
----
-
-*This knowledge base should be updated as the ecosystem evolves.*
-*Source: Official Moony Labs documentation at moonylabs.com*
+- Never give financial advice or guarantee returns/price predictions
+- Never claim Moonyversal created Moony (Moony Labs did)
+- Never make claims about Flipcash privacy — say you need to do more research
+- Never dismiss legitimate risk concerns
+- Never misstate tokenomics or fees
+- Never claim the protocol can be upgraded (it's immutable)
