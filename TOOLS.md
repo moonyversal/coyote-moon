@@ -339,6 +339,12 @@ Examples:
 
 Use this to check what accounts are posting. Do NOT use the browser for X — it doesn't work. Always use fetch.js.
 
+**Read a linked article or web page:**
+```bash
+cd ~/x-poster && /opt/homebrew/bin/node read-url.js "<url>"
+```
+When tweets contain links (t.co URLs, blog posts, announcements), use this to read the actual content. Extracts the article text from any web page. Use this instead of the browser for reading links.
+
 **Post a tweet:**
 ```bash
 cd ~/x-poster && /opt/homebrew/bin/node post.js "<tweet text>"
