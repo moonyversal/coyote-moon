@@ -137,7 +137,7 @@ curl -s -X POST http://127.0.0.1:3003/api/escrow/callback \
   -H 'Content-Type: application/json' \
   -d '{"op":"send-payout","matchId":"<matchId>","success":true,"cashLinkUrl":"<url_from_cli>"}'
 ```
-Also DM the winner their cash link on Telegram (the webhook message includes their Telegram ID).
+Do NOT DM the winner — the game server handles prize delivery directly.
 
 **check-balance** — Return current escrow wallet balance.
 ```bash
@@ -161,7 +161,7 @@ Messages arrive like:
 - ALWAYS POST the callback. The game server is waiting for confirmation.
 - Game escrow spend limits are separate from tip limits. Max per payout: $5.00.
 - If a command fails, still POST the callback with `"success":false` and the error.
-- Do NOT deliver these results to Telegram (they're machine-to-machine). The only exception: DM the winner their payout cash link.
+- Do NOT deliver these results to Telegram (they're machine-to-machine). The game server handles all player DMs for payouts and refunds.
 
 ---
 
@@ -327,12 +327,23 @@ Use these logs to review daily community activity for tipping decisions.
 
 ## X (Twitter) — @coyotemoonxyz
 
-Post to X using the official API. Uses pay-per-credit ($0.01 per tweet). Be intentional — don't waste credits.
+Post to X and read tweets using the official API.
+
+**Read tweets from an account:**
+```bash
+cd ~/x-poster && /opt/homebrew/bin/node fetch.js <username> [count]
+```
+Examples:
+- `node fetch.js flipcash 5` — last 5 tweets from @flipcash
+- `node fetch.js ted_livingston 10` — last 10 from @ted_livingston
+
+Use this to check what accounts are posting. Do NOT use the browser for X — it doesn't work. Always use fetch.js.
 
 **Post a tweet:**
 ```bash
 cd ~/x-poster && /opt/homebrew/bin/node post.js "<tweet text>"
 ```
+Uses pay-per-credit ($0.01 per tweet). Be intentional — don't waste credits.
 
 **Rules:**
 - Max 280 characters per tweet.
