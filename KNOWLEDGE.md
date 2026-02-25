@@ -87,11 +87,6 @@ On-chain Solana programs by Code Inc:
 - **Splitter:** `spLit2eb13Tz93if6aJM136nUWki5PVUsoEjcUjwpwW` (OtterSec audited)
 - All MIT licensed, open source at github.com/code-payments
 
----
-
-## Moonyswap
-
-Trading interface for Flipcash currencies by Moonyversal. Use any Solana wallet (Phantom, Solflare, etc.) — no Flipcash app required. Trade directly with reserves, real-time prices, portfolio tracking. **0.33% buy fee** goes toward purchasing MNY (negligible; skip by going direct to reserve or Flipcash app).
 
 ---
 
@@ -107,7 +102,7 @@ Nonprofit public benefit corporation. Public steward of the Moony network. Indep
 |--------|------|
 | **Moony Labs, LLC** | Created/deployed protocol; moonylabs.com, @moonylabs |
 | **Moony Foundation** | Nonprofit steward; moony.org, @moonycoin, @moonyfoundation |
-| **Moonyversal** | Independent builder; Moonyswap + Coyote Moon |
+| **Moonyversal** | Independent builder; Coyote Moon |
 | **Flipcash Inc.** | Company behind Flipcash app; issues USDF |
 | **Code Inc.** | Parent company of Flipcash. Open-source infrastructure: Code VM, Code Program Library, servers. Founded by Ted Livingston (creator of Kik Messenger) |
 | **Code Payments** | GitHub org: github.com/code-payments |
@@ -120,7 +115,7 @@ Nonprofit public benefit corporation. Public steward of the Moony network. Indep
 
 **Flipcash/Code:** [flipcash.com](https://flipcash.com) | @flipcash | [github.com/code-payments](https://github.com/code-payments) | [Reserve Contract](https://github.com/code-payments/flipcash-program) | [Code VM](https://github.com/code-payments/code-vm) | [Code Program Library](https://github.com/code-payments/code-program-library) | [Server](https://github.com/code-payments/flipcash2-server)
 
-**Moonyversal:** [moonyswap.com](https://moonyswap.com) | @moonyversal | @coyotemoonxyz | [coyotemoon.xyz](https://www.coyotemoon.xyz)
+**Moonyversal:** @moonyversal | @coyotemoonxyz | [coyotemoon.xyz](https://www.coyotemoon.xyz)
 
 **Audits:** [Flipcash Reserve (Sec3)](https://github.com/code-payments/flipcash-program/blob/main/docs/audit_final.pdf) | [Code VM (OtterSec)](https://github.com/code-payments/code-vm/blob/main/docs/code_audit_final.pdf)
 

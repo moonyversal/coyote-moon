@@ -29,7 +29,6 @@ coyote-moon/
 
 - **Moony Foundation:** [moony.org](https://moony.org) · [@moonycoin](https://x.com/moonycoin)
 - **Moonyversal:** [@moonyversal](https://x.com/moonyversal)
-- **Moonyswap:** [moonyswap.com](https://moonyswap.com)
 - **Moony Docs:** [moonylabs.com](https://moonylabs.com)
 
 ---
